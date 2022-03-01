@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Bree_Serif/BreeSerif-Regular.ttf">
+    <link rel="stylesheet" href="../Francois_One/FrancoisOne-Regular.ttf">
+    <title>・Info-Pédia・</title>
+    <link rel="icon" type="image/x-icon" href="../images/logo.ico">
+</head>
+<body>
+    <div class="top" id="#top">
+        <div class="navbar green-bg" id="my_navbar-green">
+            <a href="../index.html">Débuts de l'info</a>
+            <a href="turing.html">Allan Turing et Enigma</a>
+            <a href="#top" class="active">Modèle de Von Neumann</a>
+            <a href="eniac.html">L'ENIAC</a>
+            <a href="prog-lng.html">Langages de programmation</a>
+            <a href="javascript:void(0);" class="icon" id="icon-green" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <header class="container green-bg">
+        <h1 class="wiki-title">🌐・Info-Pédia・🌐</h1>
+        <p class="wiki-subtitle">Le modèle (architecture) de Von Neumann</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="first-container">
+        <div class="content">
+            <div class="twothird">
+                <h1>Origines</h1>
+                <h5>D'où vient cette architecture ..?</h5>
+            </div>
+            <div class="image1">
+                <img class="content-image" src="../images/neumann1.jpg" alt="Indispo">
+            </div> 
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">L'architecture dite architecture de Von Neumann est un modèle pour un ordinateur
+                qui utilise une strucutre de stockage unique pour conserver à la fois les instructions et les données demandés
+                ou produites par le calcul. De telles machines sont aussi connues sous le nom d'ordinateur à programme enregistré.
+                La séparation entre le stockage et le processeur est implicite dans ce modèle.
+                <br><br>
+                Cette architecture est appelée ainsi en référence au mathématicien John Von Neumann, qui a élaboré en Juin 1945 dans le
+                cadre dun projet EDVAC, la première description d'un ordinateur dont le programme est stocké dans sa mémoire.
+                <br><br>
+                Allan Turing, John William Mauchly et John Eckert (pendant leur travaux sur L'ENIAC) ont également utilisé ce concept
+                ou une idée proche, et ce indépendamment de Von Neumann.
+                <br><br>
+                Herman Glodstine (un collègue de John Von Neumann) fit circuler une description inachevée, intitulée "Première ébauche
+                d'un rapport sur EDVAC", basée sur les travaux d'Eckert et Mauchly, sous le nom de Von Neumann.
+                <br><br>
+                Le document a été lu par des dizaines de collègues de Von Neumann en Amérique et en Europe, et a inspiré plusieurs
+                machines en conctruction.
+            </p> 
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="second-container">
+        <div class="content">
+            <div class="image2">
+                <img class="content-image" src="../images/neumann2.png" alt="Indispo">
+            </div>
+            <div class="second-twothird">
+                <h1>Principe d'architecture</h1>
+                <h5>Comment l'architecture se décompose ..?</h5>
+            </div>
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">L'architecture de Von Neumann décompose l'ordinateur en 4 parties distinctes :
+                <br>
+                1 - L'unité arithmétique et logique (UAL ou ALU en anglais) ou unité de traitement : son rôle est d'effectuer les opérations de base.
+                <br>
+                2- L'unité de contrôle, chargée du "séquençage" des opérations.
+                <br>
+                3 - La mémoire qui contient à la fois les données et le programme qui indiquera à l'unité de contrôle quels sont les calculs à faire
+                sur ces données. La mémoire se divise entre mémoire volatile (programmes et données en cours de fonctionnement) et mémoire permanente (programmes et données de base de la machine).
+                <br>
+                4 - Les dispositifs d'entrée-sortie, qui permettent de communiquer avec le monde extérieur.
+            </p>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="first-container">
+        <div class="content">
+            <div class="third-twothird">
+                <h1>Modification des instructions</h1>
+                <h5>Comment l'architecture modfifie les instructions faite à la machine ..?</h5>
+            </div>
+            <div class="image3">
+                <img class="content-image" src="../images/neumann3.jpg" alt="Indispo">
+            </div> 
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">En traitant les instructions de la même façon que les données, un ordinateur qui a un programme stocké en
+                mémoire peut facilement modifier les instructions. Une raison importante ayant induit une telle possibilité était le besoin
+                pour un programme d’incrémenter ou modifier le champ adresse des instructions (pour faire des boucles par exemple).
+                Cette raison est devenue moins importante avec l'apparition de l’utilisation de registres d’index et de l’adressage indirect
+                en tant que caractéristique standard des processeurs.
+                <br><br>
+                L’architecture actuelle des ordinateurs rend inutile la modification à faible échelle des instructions du programme 
+                — son « code » — car cela rendrait inefficaces les techniques de gestion de l’antémémoire et du pipeline dans le processeur.
+                Cette pratique est donc à ce jour obsolète. Bien sûr, à une plus grande échelle, la possibilité de traiter des instructions de
+                la même manière que des données est ce qui permet l’écriture de compilateurs. C’est aussi une caractéristique exploitée par les
+                virus lorsqu’ils ajoutent une copie de leur propre code dans un programme existant. Le problème de la copie de code non
+                autorisée peut être évité par l’utilisation d’un système de protection de la mémoire et, en particulier, par le gestionnaire
+                de la mémoire virtuelle. 
+            </p> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function myFunction() {
+    var x = document.getElementById("my_navbar-green");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+    } 
+</script>

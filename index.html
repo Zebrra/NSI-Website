@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Bree_Serif/BreeSerif-Regular.ttf">
+    <link rel="stylesheet" href="Francois_One/FrancoisOne-Regular.ttf">
+    <title>・Info-Pédia・</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+</head>
+<body>
+    <div class="top" id="#top">
+        <div class="navbar purple-bg" id="my_navbar-purple">
+            <a href="#top" class="active">Débuts de l'info</a>
+            <a href="pages/turing.html">Allan Turing et Enigma</a>
+            <a href="pages/neumann.html">Modèle de Von Neumann</a>
+            <a href="pages/eniac.html">L'ENIAC</a>
+            <a href="pages/prog-lng.html">Langages de programmation</a>
+            <a href="javascript:void(0);" class="icon" id="icon-purple" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <header class="container purple-bg">
+        <h1 class="wiki-title">🌐・Info-Pédia・🌐</h1>
+        <p class="wiki-subtitle">Histoire de l'informatique</p>
+    </header>
+
+    <!-- First Grid -->
+    <div class="first-container">
+        <div class="content">
+            <div class="twothird">
+                <h1>Les débuts de l'informatique.</h1>
+                <h5>Comment est venu ce nom ..?</h5>
+            </div>
+            <div class="image1">
+                <img class="content-image" src="images/info1.jpg" alt="Indispo">
+            </div> 
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">L'histoire de l'informatique est l'histoire de la science du traitement rationnel, notamment par machines automatiques de l'information.
+            Le mot informatique a été crée en 1962 par Philippe Dreyfus. Il s'agit d'un néologisme de la langue française fait de la contraction des deux mots "automatique" et "information",
+            les anglo-saxons utilisent les termes de "computer-science" ou de "data-processing".
+            </p> 
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="second-container">
+        <div class="content">
+            <div class="image2">
+                <img class="content-image" src="images/info2.jpg" alt="Indispo">
+            </div>
+            <div class="second-twothird">
+                <h1>L'origine mathématique.</h1>
+                <h5>Qu'est ce qui a initier son développement ..?</h5>
+            </div>
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">Le développement de l'informatique est lié à la recherche fondamentale en mathématiques et plus précisément à la logique et aux algorithmes mathématiques, apparus
+                au début du 9ème siècle avec les travaux du mathématicien arabe Abu Jaffar Al Khawarizmi.
+                <br><br>
+                L'informatique a bénéficié en outre de l'introduction du calcul binaire en Europe vers 1967, grâce aux travaux de Gottfred Wilhelm Leibnig, à la formalisation du principale des machines à calculer
+                par Ado Lovelace en 1840 et à la théorisation de la logique binaire par George Boole en 1854.
+                <br><br>
+                Au départ, l'informatique a principalement deux usages, le calcul scientifique (pour des usages aussi bien civils que militaires, stimulés par la guerre froide)
+                et l'aide à la gestion des entreprises, en prenant la relève de la mécanographie. En anglais on distingue deux domaines : Computer-Science et Information Systems.
+            </p>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="first-container">
+        <div class="content">
+            <div class="third-twothird">
+                <h1>L'évolution du domaine.</h1>
+                <h5>Comment l'informatique s'est pérenisée et à conquis tout les domaines ..?</h5>
+            </div>
+            <div class="image3">
+                <img class="content-image" src="images/info3.png" alt="Indispo">
+            </div> 
+        </div>
+        <div class="descript-text">
+            <p class="text-grey">La fin des années 1960 est marquée par une bulle spéculative sur les sociétées d'électronique découlant de l'apparition des circuits intégrés produits à grande échelle,
+                et surtout de nouveaux modes d'utilisation de l'ordinateur, notamment en temps partagé sur des terminaux distants.
+                <br><br>
+                De nouvelles machines permettent d'automatiser des calculs fait précédemment par des pools de calculateurs humains dans les entreprises, les universités, les organismes de rechercher.
+                Le ministère de la Défense aux Etats-Unis a subventionné de gros programmes de recherche et programmation, en reconnaissance des formes et intelligence artificielle,
+                en codage et cryptographie, en traduction automatique des langues, qui ont permis le décollage des applications informatiques.
+                <br><br>
+                En France, à plus petite échelle, au milieu des années 1960, la diversification des applications se combine avec l'attrait de l'ordinateur pour divers projets scientifiques
+                (de la logique à la linguistique). Mais il faudra plus de dix ans pour que les grandes institutions scientifiques admettent officiellement l'idée que l'informatique est une nouvelle science.
+
+            </p> 
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function myFunction() {
+    var x = document.getElementById("my_navbar-purple");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+    } 
+</script>

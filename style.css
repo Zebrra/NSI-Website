@@ -1,0 +1,652 @@
+:root {
+    --purple-color: rgb(143, 17, 182);
+    --blue-color: rgb(18, 196, 186);
+    --green-color: rgb(18, 196, 29);
+    --orange-color: rgb(202, 148, 17);
+    --yellow-color: rgb(216, 201, 14);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+        box-sizing: inherit
+}
+
+body, h5, a {
+    font-family: "BreeSerif", sans-serif;
+    margin: 0 0 0 0;
+    line-height: 1.5;
+}
+
+button, h1 {
+    font-family: "FrancoisOne", sans-serif;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+}
+
+b.purple {
+    color: var(--purple-color);
+}
+b.blue {
+    color: var(--blue-color);
+}
+b.green {
+    color: var(--green-color);
+}
+b.orange {
+    color: var(--orange-color);
+}
+b.yellow {
+    color: var(--yellow-color);
+}
+
+.navbar.purple-bg, .container.purple-bg {
+    background-color: var(--purple-color);
+}
+.navbar.blue-bg, .container.blue-bg {
+    background-color: var(--blue-color);
+}
+.navbar.green-bg, .container.green-bg {
+    background-color: var(--green-color);
+}
+.navbar.orange-bg, .container.orange-bg {
+    background-color: var(--orange-color);
+}
+.navbar.yellow-bg, .container.yellow-bg {
+    background-color: var(--yellow-color);
+}
+
+
+.navbar {
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    outline: 0;
+    white-space: normal;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 40px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 20%;
+    max-height: max-content;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255); /* !important; */
+    color: #000000;
+    transition: 0.5s;
+}
+
+.navbar a.active {
+    background-color: #ffffff;
+    color: #202020
+}
+
+.navbar a.active:hover {
+    background-color: #ccc !important ;
+    color: #000
+}
+
+.navbar .icon {
+    display: none;
+    color: #000;
+}
+
+.navbar a.icon:hover {
+    background-color: #ffffff;
+}
+
+
+header {
+    display: block;
+}
+
+.container {
+    padding: 128px 16px;
+    text-align: center; /* !important; */
+    color: #fff; /* !important; */
+    
+    /* background-color: rgb(143, 17, 182);  */
+}
+
+.wiki-title {
+    font-size: 64px; /* !important; */
+    font-weight: 400;
+    margin: 16px; /* !important  */
+}
+
+.wiki-subtitle {
+    font-size: 24px; /* !important; */
+}
+
+.text-grey {
+    color: #474747; /* !important; */
+}
+
+.content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descript-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.descript-text p {
+    font-size: 18px;
+    width: 60%;
+    text-align: justify;
+}
+
+.first-container, .third-container {
+    padding: 64px 16px
+}
+
+.twothird, .third-twothird {
+    width: 30%;
+    /* float: right; */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.twothird h1, .third-twothird h1 {
+    text-align: right;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.twothird h5, .third-twothird h5 {
+    text-align: right;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.image1, .image3 {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-image {
+    box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+    border-radius: 20px 20px;
+    width: 100%;
+}
+
+.second-container {
+    color: #000; /* !important; */
+    background-color: #dddddd; /* !important; */
+    padding: 64px 16px   
+}
+
+.second-twothird {
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.second-twothird h1 {
+    text-align: left;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.second-twothird h5 {
+    text-align: left;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.image2 {
+    width: 30%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Responsive design */
+@media screen and (max-width:1700px) {    
+    .wiki-title {
+        font-size: 55px; /* !important; */
+        margin: 14px; /* !important */
+    }
+    
+    .wiki-subtitle {
+        font-size: 24px;
+    }
+    
+    .descript-text p {
+        font-size: 16px;
+    }
+    
+    .first-container, .third-container {
+        padding: 54px 14px
+    }
+    
+    .twothird h1, .third-twothird h1 {
+        font-size: 34px;
+    }
+    
+    .twothird h5, .third-twothird h5 {
+        font-size: 19px;
+    }
+
+    .second-container {
+        padding: 54px 14px   
+    }
+    
+    .second-twothird h1 {
+        font-size: 34px;
+    }
+    
+    .second-twothird h5 {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .wiki-title {
+        font-size: 55px;
+        margin: 14px;
+    }
+    
+    .wiki-subtitle {
+        font-size: 20px;
+    }
+    
+    .descript-text p {
+        font-size: 16px;
+    }
+    
+    .first-container, .third-container {
+        padding: 50px 14px
+    }
+    
+    .twothird h1, .third-twothird h1 {
+        font-size: 30px;
+    }
+    
+    .twothird h5, .third-twothird h5 {
+        font-size: 17px;
+    }
+
+    .second-container {
+        padding: 50px 14px   
+    }
+    
+    .second-twothird h1 {
+        font-size: 30px;
+    }
+    
+    .second-twothird h5 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1000px) {    
+    .navbar a {
+        padding: 16px 25px;
+        font-size: 13px;
+    }
+    
+    .container {
+        padding: 98px 16px;
+    }
+    
+    .wiki-title {
+        font-size: 40px;
+        margin: 14px;
+    }
+
+    .wiki-subtitle {
+        font-size: 20px;
+    }
+    
+    .descript-text p {
+        font-size: 16px;
+    }
+    
+    .first-container, .third-container {
+        padding: 45px 10px
+    }
+    
+    .twothird, .third-twothird {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .twothird h1, .third-twothird h1 {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    
+    .twothird h5, .third-twothird h5 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    .image1, .image3 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .second-container {
+        padding: 45px 10px   
+    }
+    
+    .second-twothird {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .second-twothird h1 {
+        font-size: 24px;
+        margin: 5px 0;
+    }
+    
+    .second-twothird h5 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    .image2 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a.icon:hover {
+        background-color:white !important;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        text-align: center;
+        padding: 16px 0px;
+    }
+
+    .navbar.purple-bg.responsive {
+        background-color: var(--purple-color);
+    }
+    #my_navbar-purple, a#icon-purple {
+        background-color: var(--purple-color);
+    }
+    .navbar.blue-bg.navbar.responsive {
+        background-color: var(--blue-color);
+    }
+    #my_navbar-blue, a#icon-blue {
+        background-color: var(--blue-color);
+    }
+    .navbar.green-bg.responsive {
+        background-color: var(--green-color);
+    }
+    #my_navbar-green, a#icon-green {
+        background-color: var(--green-color);
+    }
+    .navbar.orange-bg.responsive {
+        background-color: var(--orange-color);
+    }
+    #my_navbar-orange, a#icon-orange {
+        background-color: var(--orange-color);
+    }
+    .navbar.yellow-bg.responsive {
+        background-color: var(--yellow-color);
+    }
+    #my_navbar-yellow, a#icon-yellow {
+        background-color: var(--yellow-color);
+    }
+
+    .navbar.responsive {
+        flex-direction: column;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 16px 40px;
+        font-size: 13px;
+        width: auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 40px 16px;
+        text-align: center; /* !important; */
+    }
+
+    .wiki-title {
+        font-size: 40px; /* !important; */
+        font-weight: 400;
+        margin: 16px; /* !important */
+    }
+    
+    .wiki-subtitle {
+        font-size: 20px; /* !important; */
+    }
+
+    .descript-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .twothird, .third-twothird {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .twothird h1, .third-twothird h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .twothird h5, .third-twothird h5 {
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .image1, .image3 {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .content-image {
+        width: 100%;
+    }
+    
+    .second-container {
+        padding: 40px 16px;
+        text-align: center;
+    }
+    
+    .second-twothird {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .second-twothird h1 {
+        font-size: 30px;
+    }
+    
+    .second-twothird h5 {
+        font-size: 18px;
+    }
+    
+    .image2 {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* justify-self: flex-end; */
+        /* align-self: flex-end; */
+        /* float: right; */
+    }
+
+    .navbar a {
+        font-size: 12px;
+        text-align: center;
+        padding: 16px 0px;
+    }
+
+    .navbar.responsive {
+        flex-direction: column;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 16px 40px;
+        font-size: 12px;
+        width: auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 40px 16px;
+        text-align: center; /* !important; */
+    }
+
+    .wiki-title {
+        font-size: 30px; /* !important; */
+        font-weight: 400;
+        margin: 16px; /* !important */
+    }
+    
+    .wiki-subtitle {
+        font-size: 16px; /* !important; */
+    }
+
+    .descript-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .twothird, .third-twothird {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .twothird h1, .third-twothird h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .twothird h5, .third-twothird h5 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .image1, .image3 {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .content-image {
+        width: 100%;
+    }
+    
+    .second-container {
+        padding: 40px 16px;
+        text-align: center;
+    }
+    
+    .second-twothird {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .second-twothird h1 {
+        font-size: 30px;
+    }
+    
+    .second-twothird h5 {
+        font-size: 18px;
+    }
+    
+    .image2 {
+        width: 100%;
+        height: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
